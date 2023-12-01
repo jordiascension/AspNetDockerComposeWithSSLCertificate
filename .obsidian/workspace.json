@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "README.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -146,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b03c0a40f73af15",
+  "active": "6d62860e9e2daa97",
   "lastOpenFiles": [
+    "cache-data/temp-6068.rdb",
+    "cache-data/temp-4857.rdb",
     "README.md"
   ]
 }

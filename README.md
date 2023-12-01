@@ -1,7 +1,7 @@
 
 - Docker compose with our own certificate
-https://www.yogihosting.com/docker-compose-aspnet-core/
-https://learn.microsoft.com/es-es/dotnet/core/tools/dotnet-dev-certs
+	- https://www.yogihosting.com/docker-compose-aspnet-core/
+	- https://learn.microsoft.com/es-es/dotnet/core/tools/dotnet-dev-certs
 
 - Create ssl certificate in https folder
 	- dotnet dev-certs https -ep \\https\\aspnetapp.pfx -p mypass123
