@@ -12,7 +12,7 @@ https://learn.microsoft.com/es-es/dotnet/core/tools/dotnet-dev-certs
  - Change the docker-compose.override.yaml to read this certificate
   volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
-      \#- ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      \\#- ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ./https/aspnetapp.pfx:/https/aspnetapp.pfx:ro
       
  - execute docker compose build
