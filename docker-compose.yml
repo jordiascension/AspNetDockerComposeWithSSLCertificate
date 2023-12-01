@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  dockerwebapi:
+    image: jordiascension/dockerwebapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "8080:80"
+     - "443:443"
+    networks:
+      - backend
+    depends_on:
+      - my-redis
+  my-redis:
+    image: redis:alpine
+    container_name: my-redis
+    restart: always
+    ports:
+      - 6379:6379
+    command: redis-server
+    healthcheck:
+      test: [ "CMD", "redis-cli", "--raw", "incr", "ping" ]
+    networks:
+      - backend
+    volumes:
+      - ./cache-data:/data
+
+networks:
+  backend:

@@ -1,0 +1,17 @@
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\DockerWebApi.deps.json
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\DockerWebApi.runtimeconfig.json
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\appsettings.Development.json
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\appsettings.json
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\launchSettings.json
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\DockerWebApi.exe
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\DockerWebApi.dll
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\DockerWebApi.pdb
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\StackExchange.Redis.dll
+C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi\bin\Debug\Pipelines.Sockets.Unofficial.dll

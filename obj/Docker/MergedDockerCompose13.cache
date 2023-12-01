@@ -1,0 +1,74 @@
+name: dockercompose2218290786966093658
+services:
+  dockerwebapi:
+    build:
+      context: C:\Users\jordi\Desktop\Cursos\CursoNetVueling2022\MasterAndDetail\DockerWebApi
+      dockerfile: Dockerfile
+    depends_on:
+      my-redis:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_Kestrel__Certificates__Default__Password: mypass123
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/aspnetapp.pfx
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: jordiascension/dockerwebapi
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: "8080"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: "443"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /c/Users/jordi/AppData/Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: /c/Users/jordi/AppData/Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  my-redis:
+    command:
+    - redis-server
+    container_name: my-redis
+    healthcheck:
+      test:
+      - CMD
+      - redis-cli
+      - --raw
+      - incr
+      - ping
+    image: redis:alpine
+    networks:
+      backend: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: /c/Users/jordi/Desktop/Cursos/CursoNetVueling2022/MasterAndDetail/DockerWebApi/cache-data
+      target: /data
+      bind:
+        create_host_path: true
+networks:
+  backend:
+    name: dockercompose2218290786966093658_backend
